@@ -331,6 +331,7 @@ module Svn2Git
 
     def escape_quotes(str)
       str.gsub("'", "'\\\\''")
+      str.gsub("{", "'\\\\{'")
     end
 
   end
